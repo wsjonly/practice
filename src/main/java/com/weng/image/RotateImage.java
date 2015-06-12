@@ -1,11 +1,16 @@
 package com.weng.image;
 
+import java.awt.Image;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import javax.imageio.ImageIO;
+
 
 public class RotateImage {
 	
@@ -30,6 +35,8 @@ public class RotateImage {
 		return os.toByteArray();
 	}
 	
+	
+	
 
 	public static void main(String[] args) throws IOException{
 		File file = null;
@@ -45,6 +52,6 @@ public class RotateImage {
 		byte[] b = new byte[MAX_IMAGE_SIZE];
 		b = inputStream2ByteArray(is);
 		
-
+		BufferedImage image = ImageIO.read(file);
 	}
 }
