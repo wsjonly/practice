@@ -1,0 +1,474 @@
+<div class="tab-stock tab-stock-tt">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<colgroup><col width="150"><col width="110"><col width="*">
+</colgroup><tbody><tr>
+<th>行情</th>
+<th>股价</th>
+<th>涨幅</th>
+</tr>
+</tbody></table>
+</div>
+<div class="tab-stock">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<colgroup><col width="120"><col width="110"><col width="*">
+</colgroup><tbody>
+<tr><td class="stock-tt" colspan="3">中国概念股(美股)</td></tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/NASDAQ target="_blank">纳斯达克指数</a></td>
+<td class="green">4787.64</td>
+<td class="green tr">1.3%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/DJI30 target="_blank">道琼斯指数</a></td>
+<td class="green">17868.76</td>
+<td class="green tr">0.79%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SP500 target="_blank">标准普尔指数</a></td>
+<td class="green">2068.59</td>
+<td class="green tr">1.07%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SOHU target="_blank">搜狐</a></td>
+<td class="red">50.71</td>
+<td class="red tr">-1.76%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/CYOU target="_blank">畅游</a></td>
+<td class="green">24.3</td>
+<td class="green tr">0.58%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/BIDU target="_blank">百度</a></td>
+<td class="green">219.44</td>
+<td class="green tr">2.05%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/BABA target="_blank">阿里巴巴</a></td>
+<td class="green">87.26</td>
+<td class="green tr">1.47%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/QIHU target="_blank">奇虎360</a></td>
+<td class="red">61.17</td>
+<td class="red tr">-1.5%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/JD target="_blank">京东</a></td>
+<td class="red">26.32</td>
+<td class="red tr">-1.09%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/YOKU target="_blank">优酷土豆</a></td>
+<td class="red">17.47</td>
+<td class="red tr">-1.85%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SINA target="_blank">新浪</a></td>
+<td class="red">36.8</td>
+<td class="red tr">-0.14%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/WB target="_blank">微博</a></td>
+<td class="green">12.61</td>
+<td class="green tr">1.45%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/NTES target="_blank">网易</a></td>
+<td class="green">114.85</td>
+<td class="green tr">7.4%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/CTRP target="_blank">携程</a></td>
+<td class="red">46.0</td>
+<td class="red tr">-0.97%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/QUNR target="_blank">去哪儿网</a></td>
+<td class="red">29.2</td>
+<td class="red tr">-0.75%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/LONG target="_blank">艺龙</a></td>
+<td class="green">17.19</td>
+<td class="green tr">1.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/TOUR target="_blank">途牛</a></td>
+<td class="red">14.76</td>
+<td class="red tr">-0.61%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/EDU target="_blank">新东方</a></td>
+<td class="red">18.63</td>
+<td class="red tr">-0.16%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/XRS target="_blank">好未来</a></td>
+<td class="red">29.72</td>
+<td class="red tr">-1.3%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/XUE target="_blank">学大教育</a></td>
+<td class="green">2.46</td>
+<td class="green tr">1.23%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/DL target="_blank">正保远程教育</a></td>
+<td class="red">16.42</td>
+<td class="red tr">-2.49%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/TEDU target="_blank">达内科技</a></td>
+<td class="green">11.97</td>
+<td class="green tr">0.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/DANG target="_blank">当当网</a></td>
+<td class="red">8.68</td>
+<td class="red tr">-0.12%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/VIPS target="_blank">唯品会</a></td>
+<td class="red">21.42</td>
+<td class="red tr">-2.86%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/JMEI target="_blank">聚美优品</a></td>
+<td class="green">13.06</td>
+<td class="green tr">1.95%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/LITB target="_blank">兰亭集势</a></td>
+<td class="green">5.63</td>
+<td class="green tr">0.54%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/MCOX target="_blank">麦考林</a></td>
+<td class="green">4.03</td>
+<td class="green tr">1.24%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/BITA target="_blank">易车网</a></td>
+<td class="green">58.22</td>
+<td class="green tr">2.74%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/ATHM target="_blank">汽车之家</a></td>
+<td class="green">37.17</td>
+<td class="green tr">6.96%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SFUN target="_blank">搜房</a></td>
+<td class="red">6.65</td>
+<td class="red tr">-4.04%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/EJ target="_blank">易居中国</a></td>
+<td class="red">7.01</td>
+<td class="red tr">-3.04%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/LEJU target="_blank">乐居</a></td>
+<td class="green">9.98</td>
+<td class="green tr">1.42%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/MOMO target="_blank">陌陌</a></td>
+<td class="red">10.27</td>
+<td class="red tr">-1.06%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/YY target="_blank">欢聚时代</a></td>
+<td class="green">68.21</td>
+<td class="green tr">0.6%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/RENN target="_blank">人人</a></td>
+<td class="red">2.6</td>
+<td class="red tr">-1.14%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/WUBA target="_blank">58同城</a></td>
+<td class="green">37.75</td>
+<td class="green tr">0.53%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/DATE target="_blank">世纪佳缘</a></td>
+<td class="green">4.8</td>
+<td class="green tr">0.21%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/JOBS target="_blank">前程无忧</a></td>
+<td class="green">34.39</td>
+<td class="green tr">4.4%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/ZPIN target="_blank">智联招聘</a></td>
+<td class="green">15.86</td>
+<td class="green tr">1.73%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/WBAI target="_blank">500彩票网</a></td>
+<td class="green">19.18</td>
+<td class="green tr">1.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/GOMO target="_blank">久邦数码</a></td>
+<td class="red">5.0</td>
+<td class="red tr">-0.2%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/CMCM target="_blank">猎豹移动</a></td>
+<td class="green">21.47</td>
+<td class="green tr">6.18%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/XNET target="_blank">迅雷</a></td>
+<td class="red">7.59</td>
+<td class="red tr">-0.91%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/NQ target="_blank">网秦</a></td>
+<td class="green">3.59</td>
+<td class="green tr">0.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/GAME target="_blank">盛大游戏</a></td>
+<td class="green">5.19</td>
+<td class="green tr">0.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/PWRD target="_blank">完美世界</a></td>
+<td class="green">18.97</td>
+<td class="green tr">0.42%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/NCTY target="_blank">第九城市</a></td>
+<td class="red">1.48</td>
+<td class="red tr">-1.33%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/CMGE target="_blank">中国手游</a></td>
+<td class="red">15.48</td>
+<td class="red tr">-5.67%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/MOBI target="_blank">斯凯网络</a></td>
+<td class="green">3.93</td>
+<td class="green tr">0.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/TAOM target="_blank">淘米网</a></td>
+<td class="green">3.22</td>
+<td class="green tr">4.89%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/DSKY target="_blank">创梦天地</a></td>
+<td class="red">10.88</td>
+<td class="red tr">-1.45%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/KZ target="_blank">空中网</a></td>
+<td class="green">5.21</td>
+<td class="green tr">0.1%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/FENG target="_blank">凤凰新媒体</a></td>
+<td class="red">7.95</td>
+<td class="red tr">-0.38%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/JRJC target="_blank">金融界</a></td>
+<td class="red">5.11</td>
+<td class="red tr">-0.97%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/VISN target="_blank">华视传媒</a></td>
+<td class="green">9.98</td>
+<td class="green tr">1.11%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/AMCN target="_blank">航美传媒</a></td>
+<td class="green">2.18</td>
+<td class="green tr">2.83%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/KUTV target="_blank">酷6传媒</a></td>
+<td class="green">1.005</td>
+<td class="green tr">1.29%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/MONT target="_blank">澜起科技</a></td>
+<td class="green">0.0</td>
+<td class="green tr">0.0%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/VNET target="_blank">世纪互联</a></td>
+<td class="green">18.0</td>
+<td class="green tr">0.11%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/CCIH target="_blank">蓝汛</a></td>
+<td class="red">10.45</td>
+<td class="red tr">-1.69%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/EHIC target="_blank">一嗨租车</a></td>
+<td class="red">10.2</td>
+<td class="red tr">-0.97%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/AAPL target="_blank">苹果</a></td>
+<td class="green">122.02</td>
+<td class="green tr">1.92%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/GOOG target="_blank">谷歌</a></td>
+<td class="green">536.94</td>
+<td class="green tr">1.73%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/MSFT target="_blank">微软</a></td>
+<td class="green">42.6</td>
+<td class="green tr">0.57%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/AMZN target="_blank">亚马逊</a></td>
+<td class="green">372.995</td>
+<td class="green tr">0.66%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/FB target="_blank">Facebook</a></td>
+<td class="green">75.19</td>
+<td class="green tr">1.01%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/TWTR target="_blank">Twitter</a></td>
+<td class="red">46.26</td>
+<td class="red tr">-2.24%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/YHOO target="_blank">雅虎</a></td>
+<td class="green">43.07</td>
+<td class="green tr">1.17%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/LNKD target="_blank">LinkedIn</a></td>
+<td class="green">269.75</td>
+<td class="green tr">0.87%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/TSLA target="_blank">特斯拉</a></td>
+<td class="red">216.29</td>
+<td class="red tr">-0.55%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/IBM target="_blank">IBM</a></td>
+<td class="green">158.56</td>
+<td class="green tr">1.8%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/INTC target="_blank">英特尔</a></td>
+<td class="green">33.7</td>
+<td class="green tr">2.34%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/CSCO target="_blank">思科</a></td>
+<td class="green">27.49</td>
+<td class="green tr">1.36%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/ORCL target="_blank">甲骨文</a></td>
+<td class="green">43.99</td>
+<td class="green tr">1.36%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/QCOM target="_blank">高通</a></td>
+<td class="green">70.26</td>
+<td class="green tr">4.69%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/HPQ target="_blank">惠普</a></td>
+<td class="green">37.89</td>
+<td class="green tr">0.66%</td>
+</tr>
+<tr><td class="stock-tt" colspan="3">中国概念股(港股)</td></tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00700 target="_blank">腾讯</a></td>
+<td class="red">132.5</td>
+<td class="red tr">-0.38%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00992 target="_blank">联想</a></td>
+<td class="green">12.04</td>
+<td class="green tr">1.52%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/03888 target="_blank">金山软件</a></td>
+<td class="green">18.68</td>
+<td class="green tr">1.41%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00777 target="_blank">网龙</a></td>
+<td class="green">13.62</td>
+<td class="green tr">0.74%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/01980 target="_blank">天鸽互动</a></td>
+<td class="green">3.39</td>
+<td class="green tr">0.89%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/08267 target="_blank">蓝港互动</a></td>
+<td class="red">9.69</td>
+<td class="red tr">-0.1%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00699 target="_blank">神州租车</a></td>
+<td class="red">11.02</td>
+<td class="red tr">-0.9%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00941 target="_blank">中国移动</a></td>
+<td class="red">103.2</td>
+<td class="red tr">-0.48%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00762 target="_blank">中国联通</a></td>
+<td class="green">12.88</td>
+<td class="green tr">1.9%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00728 target="_blank">中国电信</a></td>
+<td class="green">4.88</td>
+<td class="green tr">0.41%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/00493 target="_blank">国美</a></td>
+<td class="red">1.02</td>
+<td class="red tr">-1.92%</td>
+</tr>
+<tr><td class="stock-tt" colspan="3">中国概念股(国内)</td></tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SZ002024 target="_blank">苏宁电器</a></td>
+<td class="green">11.4</td>
+<td class="green tr">1.51%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SZ300104 target="_blank">乐视</a></td>
+<td class="green">69.37</td>
+<td class="green tr">9.9%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SH603000 target="_blank">人民网</a></td>
+<td class="green">51.61</td>
+<td class="green tr">1.79%</td>
+</tr>
+<tr>
+<td class="tl"><a href=http://xueqiu.com/S/SZ300052 target="_blank">中青宝</a></td>
+<td class="green">29.0</td>
+<td class="green tr">3.2%</td>
+</tr>
+</tbody></table>
+</div>
