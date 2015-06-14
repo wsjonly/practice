@@ -20,11 +20,17 @@ public class RotateImage {
 	
 	public static byte[] inputStream2ByteArray(InputStream inputStream) throws IOException {
 		ByteArrayOutputStream os = new ByteArrayOutputStream();
-		FileOutputStream fos = new FileOutputStream("/test.jpg");
+		FileOutputStream fos = new FileOutputStream("/Users/shijinweng/Desktop/test2.jpeg");
 		byte[] data = new byte[BUFFER_SIZE];
 		int length;
 		while((length=inputStream.read(data, 0, BUFFER_SIZE)) > 0) {
 			os.write(data, 0, length);
+			
+			for(int i=0; i<data.length/2; i++){
+				byte k = data[data.length-1];
+				data[data.length -1] = data[i];
+				data[i] = k;
+			}
 			fos.write(data, 0, length);
 		}
 		
@@ -41,7 +47,7 @@ public class RotateImage {
 	public static void main(String[] args) throws IOException{
 		File file = null;
 		try {
-			file = new File("/image.jpg");
+			file = new File("/Users/shijinweng/Desktop/test.jpeg");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
