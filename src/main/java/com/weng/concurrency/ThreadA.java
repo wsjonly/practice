@@ -1,4 +1,4 @@
-package com.weng.concurrentTest;
+package com.weng.concurrency;
 
 public class ThreadA {
     public static void main(String[] args){

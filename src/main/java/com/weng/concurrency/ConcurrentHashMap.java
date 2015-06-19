@@ -1,4 +1,4 @@
-package com.weng.concurrentTest;
+package com.weng.concurrency;
 
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.locks.*;
