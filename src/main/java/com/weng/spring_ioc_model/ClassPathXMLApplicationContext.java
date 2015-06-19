@@ -20,6 +20,7 @@ import org.jdom.xpath.XPath;
 public class ClassPathXMLApplicationContext implements ApplicationContext{
 	
 	HashMap<String,Object> map = new HashMap<String, Object>();
+	
 	File file = null;
 	
 	public ClassPathXMLApplicationContext(String config_file) {
