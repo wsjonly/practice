@@ -1,4 +1,4 @@
-package com.weng.redis_001;
+package com.weng.redis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCommands;
