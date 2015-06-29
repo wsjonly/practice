@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import org.hibernate.MappingException;
 
@@ -30,8 +32,18 @@ public class A<K, V> {
 		Iterator iterator = set.iterator();
 		while (iterator.hasNext()){
 			Map.Entry me = (Map.Entry) iterator.next();
-			System.out.println(me.getKey());
+			System.out.println(me.getValue());
 		}
 		
+		
+		Lock lock = new ReentrantLock();
+		try{
+			lock.lock();
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			lock.unlock();
+		}
 	}
 }
