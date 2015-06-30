@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans>
-	<bean id="user" class="com.weng.spring_ioc_model.User">
+	<bean id="user" class="com.wsjonly.spring_ioc_model.User">
 		<property name="name" value="ShijinWeng"/>
 		<property name="age" value="24"/>
 	</bean>
 	
-	<bean id="person" class="com.weng.spring_ioc_model.Person">
+	<bean id="person" class="com.wsjonly.spring_ioc_model.Person">
 		<property ref="user"/>
 	</bean>
 	
