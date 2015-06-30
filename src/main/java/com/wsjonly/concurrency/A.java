@@ -17,7 +17,7 @@ import org.hibernate.MappingException;
 public class A implements Runnable{
 	
 	int count = 0;
-	static Lock lock = new ReentrantLock();
+	final static Lock lock = new ReentrantLock();
 	@Override
 	public void run() {
 		try {
