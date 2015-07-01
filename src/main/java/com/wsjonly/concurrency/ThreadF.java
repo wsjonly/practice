@@ -34,6 +34,7 @@ public class ThreadF {
 	  
 	  public static void main(String[] args) {
 		Thread thread = new DefaultThreadFactory().newThread(new A());
+		System.out.println(thread.getName());
 		thread.start();
 	}
 
