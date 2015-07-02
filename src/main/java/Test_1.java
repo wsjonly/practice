@@ -1,16 +1,16 @@
+import org.hibernate.context.internal.ThreadLocalSessionContext;
+
 
 public class Test_1 {
-	public static void main(String[] args) {
-		System.out.println(t());
+	private int i = 0;
+	
+	public Test_1(int i){
+		this.i = i;
+		System.out.println(this.i);
 	}
-
-	private static int t() {
-		// TODO Auto-generated method stub
-		int a = 0;
-		try{
-			return a;
-		}finally{
-			return 2;
-		}
+	
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread());
+		new Test_1(5);
 	}
 }
