@@ -23,22 +23,46 @@
 		<version>1.1</version>
 	</dependency>
   	
+	<!-- Lucene dependencies -->  	
+
  	<dependency>
-          <groupId>org.apache.lucene</groupId>
-          <artifactId>lucene-core</artifactId>
-          <version>3.2.0</version>
-	</dependency>
- 	<dependency>
-          <groupId>org.apache.lucene</groupId>
-          <artifactId>lucene-analyzers</artifactId>
-          <version>3.2.0</version>
+    	<groupId>org.apache.lucene</groupId>
+     	<artifactId>lucene-analyzers</artifactId>
+    	<version>3.2.0</version>
   	</dependency>
    	<dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-smartcn</artifactId>
-            <version>3.2.0</version>
-  	</dependency>    
-        
+    	<groupId>org.apache.lucene</groupId>
+       	<artifactId>lucene-smartcn</artifactId>
+      	<version>3.2.0</version>
+  	</dependency>
+  	<dependency>
+		<groupId>org.apache.lucene</groupId>
+		<artifactId>lucene-highlighter</artifactId>
+		<version>3.2.0</version>
+	</dependency>
+    <dependency>
+        <groupId>org.wltea</groupId>
+        <artifactId>IKAnalyzer</artifactId>
+        <version>3.2.8</version>
+      </dependency>      
+      <dependency>
+          <groupId>jive_lib</groupId>
+          <artifactId>jive_lib</artifactId>
+          <version>1.0</version>
+      </dependency>          
+      <dependency>
+          <groupId>myzhcoder</groupId>
+          <artifactId>myzhcoder</artifactId>
+          <version>1.0</version>
+      </dependency>        
+      <dependency>
+          <groupId>pinyin4j</groupId>
+          <artifactId>pinyin4j</artifactId>
+          <version>2.5</version>
+      </dependency>
+    
+    
+    
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
