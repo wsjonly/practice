@@ -1,3 +1,5 @@
+package com.wsjonly.lucene;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
@@ -5,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.SimpleAnalyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.document.Document;
@@ -26,7 +27,6 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.highlight.Highlighter;
 import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
 import org.apache.lucene.search.highlight.QueryScorer;
-import org.apache.lucene.search.highlight.SimpleFragmenter;
 import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
@@ -34,7 +34,6 @@ import org.apache.lucene.store.SimpleFSDirectory;
 import org.apache.lucene.util.Version;
 import org.wltea.analyzer.lucene.IKAnalyzer;
 
-import com.lucene.entity.Article;
 
 public class SimpleFSDirectoryDemo {
 	/* 创建简单中文分析器 创建索引使用的分词器必须和查询时候使用的分词器一样，否则查询不到想要的结果 */
@@ -355,7 +354,8 @@ public class SimpleFSDirectoryDemo {
 		 * luceneInstance.splitWord(keywords[3], false);
 		 */
 		// 获得结果，然后交由相关应用程序处理
-		String[] searchKeywords = new String[] { "analyzer", "沪B123", "沪K123", "沪K123 上海", "沪K3454653" };
+		String[] searchKeywords = new String[] { "analyzer", "沪B123", "沪K123",
+				"沪K123 上海", "沪K3454653" };
 		luceneInstance.searchIndexFile(searchKeywords[1]);
 	}
 }
