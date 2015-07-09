@@ -34,7 +34,6 @@ import org.apache.lucene.store.SimpleFSDirectory;
 import org.apache.lucene.util.Version;
 import org.wltea.analyzer.lucene.IKAnalyzer;
 
-
 public class SimpleFSDirectoryDemo {
 	/* 创建简单中文分析器 创建索引使用的分词器必须和查询时候使用的分词器一样，否则查询不到想要的结果 */
 	private Analyzer analyzer = new IKAnalyzer(true);
@@ -51,8 +50,7 @@ public class SimpleFSDirectoryDemo {
 		IndexWriter indexWriter = null;
 		try {
 			// 创建哪个版本的IndexWriterConfig，根据参数可知lucene是向下兼容的，选择对应的版本就好
-			IndexWriterConfig indexWriterConfig = new IndexWriterConfig(
-					Version.LUCENE_36, analyzer);
+			IndexWriterConfig indexWriterConfig = new IndexWriterConfig(Version.LUCENE_36, analyzer);
 			// 创建磁盘目录对象
 			directory = new SimpleFSDirectory(indexFile);
 			indexWriter = new IndexWriter(directory, indexWriterConfig);
@@ -60,16 +58,12 @@ public class SimpleFSDirectoryDemo {
 			// true,IndexWriter.MaxFieldLength.UNLIMITED);
 			// 这上面是使用内存保存索引的创建索引写入对象的例子，和这里的实现方式不一样，但是效果是一样的
 
-			Article article0 = new Article(1, "Simple Analyzer",
-					"这个分词是一段一段话进行分 ");
-			Article article1 = new Article(2, "Standard Analyzer",
-					"标准分词拿来分中文和ChineseAnalyzer一样的效果");
-			Article article2 = new Article(3, "PerField AnalyzerWrapper",
-					"这个很有意思，可以封装很多分词方式，还可以于先设置field用那个分词分！牛 ");
+			Article article0 = new Article(1, "Simple Analyzer", "这个分词是一段一段话进行分 ");
+			Article article1 = new Article(2, "Standard Analyzer", "标准分词拿来分中文和ChineseAnalyzer一样的效果");
+			Article article2 = new Article(3, "PerField AnalyzerWrapper", "这个很有意思，可以封装很多分词方式，还可以于先设置field用那个分词分！牛 ");
 			Article article3 = new Article(4, "CJK Analyzer",
 					"这个分词方式是正向退一分词(二分法分词)，同一个字会和它的左边和右边组合成一个次，每个人出现两次，除了首字和末字 ");
-			Article article4 = new Article(5, "Chinese Analyzer",
-					"这个是专业的中文分词器，一个一个字分 ");
+			Article article4 = new Article(5, "Chinese Analyzer", "这个是专业的中文分词器，一个一个字分 ");
 			Article article5 = new Article(6, " BrazilianAnalyzer", "巴西语言分词 ");
 			Article article6 = new Article(7, " CzechAnalyzer", "捷克语言分词 ");
 			Article article7 = new Article(8, "DutchAnalyzer", "荷兰语言分词 ");
@@ -77,8 +71,7 @@ public class SimpleFSDirectoryDemo {
 			Article article9 = new Article(10, "沪K123", "这是一个车牌号，包含中文，字母，数字");
 			Article article10 = new Article(11, "沪K345", "上海~！@~！@");
 			Article article11 = new Article(12, "沪B678", "京津沪");
-			Article article12 = new Article(13, "沪A3424",
-					"沪K345 沪K3 沪K123 沪K111111111 沪ABC");
+			Article article12 = new Article(13, "沪A3424", "沪K345 沪K3 沪K123 沪K111111111 沪ABC");
 			Article article13 = new Article(14, "沪 B2222", "");
 			Article article14 = new Article(15, "沪K3454653", "沪K345");
 			Article article15 = new Article(16, "123 123 1 2 23 3", "沪K123");
@@ -106,12 +99,9 @@ public class SimpleFSDirectoryDemo {
 				Article article = articleList.get(i);
 				// indexWriter添加索引
 				Document doc = new Document();
-				doc.add(new Field("id", article.getId().toString(),
-						Field.Store.YES, Field.Index.NOT_ANALYZED));
-				doc.add(new Field("title", article.getTitle().toString(),
-						Field.Store.YES, Field.Index.ANALYZED));
-				doc.add(new Field("content", article.getContent().toString(),
-						Field.Store.YES, Field.Index.ANALYZED));
+				doc.add(new Field("id", article.getId().toString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+				doc.add(new Field("title", article.getTitle().toString(), Field.Store.YES, Field.Index.ANALYZED));
+				doc.add(new Field("content", article.getContent().toString(), Field.Store.YES, Field.Index.ANALYZED));
 				// 添加到索引中去
 				indexWriter.addDocument(doc);
 				System.out.println("索引添加成功：第" + (i + 1) + "次！！");
@@ -243,8 +233,7 @@ public class SimpleFSDirectoryDemo {
 		try {
 			indexReader = IndexReader.open(FSDirectory.open(indexFile));
 			// 创建一个排序对象，其中SortField构造方法中，第一个是排序的字段，第二个是指定字段的类型，第三个是是否升序排列，true：升序，false：降序。
-			Sort sort = new Sort(new SortField[] {
-					new SortField("title", SortField.STRING, false),
+			Sort sort = new Sort(new SortField[] { new SortField("title", SortField.STRING, false),
 					new SortField("content", SortField.STRING, false) });
 			// Sort sort = new Sort();
 			// 创建搜索类
@@ -253,8 +242,7 @@ public class SimpleFSDirectoryDemo {
 			// QueryParser支持单个字段的查询，但是MultiFieldQueryParser可以支持多个字段查询，建议用后者这样可以实现全文检索的功能。
 			// QueryParser queryParser = new QueryParser(Version.LUCENE_36,
 			// "title", analyzer);
-			QueryParser queryParser = new MultiFieldQueryParser(
-					Version.LUCENE_36, new String[] { "title", "content" },
+			QueryParser queryParser = new MultiFieldQueryParser(Version.LUCENE_36, new String[] { "title", "content" },
 					analyzer);
 			// 利用queryParser解析传递过来的检索关键字，完成Query对象的封装
 			Query query = queryParser.parse(keyword);
@@ -265,11 +253,9 @@ public class SimpleFSDirectoryDemo {
 			ScoreDoc[] scoreDoc = topDocs.scoreDocs;
 			// 像百度，谷歌检索出来的关键字如果有，除了显示在列表中之外还会高亮显示。Lucenen也支持高亮功能，正常应该是<font
 			// color='red'></font>这里用【】替代，使效果更加明显
-			SimpleHTMLFormatter simpleHtmlFormatter = new SimpleHTMLFormatter(
-					"【", "】");
+			SimpleHTMLFormatter simpleHtmlFormatter = new SimpleHTMLFormatter("【", "】");
 			// 具体怎么实现的不用管，直接拿来用就好了。
-			Highlighter highlighter = new Highlighter(simpleHtmlFormatter,
-					new QueryScorer(query));
+			Highlighter highlighter = new Highlighter(simpleHtmlFormatter, new QueryScorer(query));
 
 			for (int i = 0; i < scoreDoc.length; i++) {
 				// 内部编号 ,和数据库表中的唯一标识列一样
@@ -282,21 +268,18 @@ public class SimpleFSDirectoryDemo {
 				String content = mydoc.get("content");
 				TokenStream tokenStream = null;
 				if (title != null && !title.equals("")) {
-					tokenStream = analyzer.tokenStream("title",
-							new StringReader(title));
+					tokenStream = analyzer.tokenStream("title", new StringReader(title));
 					title = highlighter.getBestFragment(tokenStream, title);
 				}
 				if (content != null && !content.equals("")) {
-					tokenStream = analyzer.tokenStream("content",
-							new StringReader(content));
+					tokenStream = analyzer.tokenStream("content", new StringReader(content));
 					// 传递的长度表示检索之后匹配长度，这个会导致返回的内容不全
 					// highlighter.setTextFragmenter(new
 					// SimpleFragmenter(content.length()));
 					content = highlighter.getBestFragment(tokenStream, content);
 				}
 				// 需要注意的是 如果使用了高亮显示的操作，查询的字段中没有需要高亮显示的内容 highlighter会返回一个null回来。
-				articleList.add(new Article(Integer.valueOf(id),
-						title == null ? mydoc.get("title") : title,
+				articleList.add(new Article(Integer.valueOf(id), title == null ? mydoc.get("title") : title,
 						content == null ? mydoc.get("content") : content));
 			}
 		} catch (CorruptIndexException e) {
@@ -354,8 +337,7 @@ public class SimpleFSDirectoryDemo {
 		 * luceneInstance.splitWord(keywords[3], false);
 		 */
 		// 获得结果，然后交由相关应用程序处理
-		String[] searchKeywords = new String[] { "analyzer", "沪B123", "沪K123",
-				"沪K123 上海", "沪K3454653" };
+		String[] searchKeywords = new String[] { "analyzer", "沪B123", "沪K123", "沪K123 上海", "沪K3454653" };
 		luceneInstance.searchIndexFile(searchKeywords[1]);
 	}
 }
