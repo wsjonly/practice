@@ -18,20 +18,21 @@
 
 		<!-- Lucene dependencies -->
 		<!-- on Windows -->
-		<dependency>
-			<groupId>javax.transaction</groupId>
-			<artifactId>jta</artifactId>
-			<version>1.1</version>
-		</dependency>
+		<!-- <dependency> <groupId>javax.transaction</groupId> <artifactId>jta</artifactId> 
+			<version>1.1</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-core</artifactId> <version>3.2.0</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-analyzers</artifactId> 
+			<version>3.2.0</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-smartcn</artifactId> <version>3.2.0</version> </dependency> 
+			<dependency> <groupId>org.wltea</groupId> <artifactId>IKAnalyzer</artifactId> 
+			<version>3.2.8</version> </dependency> -->
+
+
+		<!-- on Mac -->
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
-			<version>3.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-analyzers</artifactId>
-			<version>3.2.0</version>
+			<version>3.6.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
@@ -39,20 +40,17 @@
 			<version>3.2.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.wltea</groupId>
-			<artifactId>IKAnalyzer</artifactId>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-highlighter</artifactId>
+			<version>3.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.wltea.ik-analyzer</groupId>
+			<artifactId>ik-analyzer</artifactId>
 			<version>3.2.8</version>
 		</dependency>
-
-
-		<!-- on Mac -->
-		<!-- <dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-core</artifactId> 
-			<version>3.6.2</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
-			<artifactId>lucene-smartcn</artifactId> <version>3.2.0</version> </dependency> 
-			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-highlighter</artifactId> 
-			<version>3.6.2</version> </dependency> <dependency> <groupId>org.wltea.ik-analyzer</groupId> 
-			<artifactId>ik-analyzer</artifactId> <version>3.2.8</version> </dependency> -->
-
+		<!-- Mac end -->
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
