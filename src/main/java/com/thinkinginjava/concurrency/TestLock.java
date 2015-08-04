@@ -7,10 +7,10 @@ public class TestLock {
 	private HashMap map = new HashMap();
 	
 	public TestLock() {
-		for(int i=0;i<100;i++) {
+		for(int i=0;i<10;i++) {
 			Thread t = new Thread(String.valueOf(i)) {
 				public void run() {
-					for (int j = 0; j < 500000; j++) {
+					for (int j = 0; j < 10000000; j++) {
 						map.put(new Integer(j), j);
 					}
 	
