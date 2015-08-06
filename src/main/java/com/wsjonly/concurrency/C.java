@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 
 public class C implements Callable<Integer> {
 	int s = 0;
-	@Override
 	public Integer call() throws Exception {
 		// TODO Auto-generated method stub
 		

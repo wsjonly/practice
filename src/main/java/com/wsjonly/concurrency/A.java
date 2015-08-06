@@ -23,7 +23,6 @@ public class A implements Runnable{
 	
 	int count = 0;
 	final static Lock lock = new ReentrantLock();
-	@Override
 	public void run() {
 		lock.lock();
 		try {

@@ -20,7 +20,6 @@ public class SDFNotThreadsafeDemo {
 
 	private static class MyThread implements Runnable {
 
-		@Override
 		public void run() {
 			for (String strDate : stringDates) {
 				try {

@@ -15,7 +15,6 @@ public class LiftOff implements Runnable{
 		return "#" + id + "(" + (countDown > 0 ? countDown : "Liftoff!") + ").";
 	}
 
-	@Override
 	public  void run() {
 		// TODO Auto-generated method stub
 		while (countDown-- > 0){
