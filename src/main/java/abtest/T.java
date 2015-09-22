@@ -2,14 +2,15 @@ package abtest;
 
 public class T {
 	public static void main(String[] args) {
-		int i = 2;
-		int j = 1;
-		int k = 0;
-		i = j = k;
-		System.out.println(i + "," + j + " ," + k);
-
-		for (;;) {
-			System.out.println(1);
+		int i = 0;
+		long startTime = System.currentTimeMillis();
+//		Long.MAX_VALUE
+		System.out.println(Integer.MAX_VALUE);
+		while(i < Integer.MAX_VALUE) {
+			i++;
+			if (i % 100000000 == 0) {
+				System.out.println(System.currentTimeMillis() - startTime);
+			}
 		}
 	}
 }

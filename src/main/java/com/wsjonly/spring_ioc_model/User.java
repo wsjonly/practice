@@ -1,8 +1,13 @@
 package com.wsjonly.spring_ioc_model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
+	private static final long serialVersionUID = -4300409148070030484L;
+	
 	String name;
 	String age;
+	
 	public String getName() {
 		return name;
 	}

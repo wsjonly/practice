@@ -5,7 +5,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class ObjectSerializedUtil{
+import com.wsjonly.spring_ioc_model.User;
+
+public abstract class ObjectSerializedUtil{
 	public static byte[] ObjectToByte(java.lang.Object obj) {
 		byte[] bytes = null;
 		try {
@@ -43,5 +45,18 @@ public class ObjectSerializedUtil{
 			return null;
 		}
 		return obj;
+	}
+	
+	
+	public static void main(String[] args) {
+		User user = new User();
+		user.setAge("24");
+		user.setName("ShijinWeng");
+		byte[] bytes = ObjectSerializedUtil.ObjectToByte(user);
+		System.out.println(bytes);
+		Object object = ObjectSerializedUtil.ByteToObject(bytes);
+		if (object instanceof User) {
+			System.out.println(object);
+		}
 	}
 }
