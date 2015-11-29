@@ -71,7 +71,7 @@ public class RAMDirectoryDemo {
 
 		// Query query = new TermQuery(new Term("dosometing", "lucene"));
 		// Query query = new TermQuery(new Term("sex", "男"));
-		Query query = new TermQuery(new Term("name", "cheng"));
+		Query query = new TermQuery(new Term("sex", "男的"));
 		// 去索引目录中查询，返回的是TopDocs对象，里面存放的就是上面放的document文档对象
 		TopDocs rs = searcher.search(query, null, 10);
 		long endTime = System.currentTimeMillis();

@@ -61,20 +61,19 @@ public class SimpleFSDirectoryDemo {
 			Article article0 = new Article(1, "Simple Analyzer", "这个分词是一段一段话进行分 ");
 			Article article1 = new Article(2, "Standard Analyzer", "标准分词拿来分中文和ChineseAnalyzer一样的效果");
 			Article article2 = new Article(3, "PerField AnalyzerWrapper", "这个很有意思，可以封装很多分词方式，还可以于先设置field用那个分词分！牛 ");
-			Article article3 = new Article(4, "CJK Analyzer",
-					"这个分词方式是正向退一分词(二分法分词)，同一个字会和它的左边和右边组合成一个次，每个人出现两次，除了首字和末字 ");
+			Article article3 = new Article(4, "CJK Analyzer", "这个分词方式是正向退一分词(二分法分词)，同一个字会和它的左边和右边组合成一个次，每个人出现两次，除了首字和末字 ");
 			Article article4 = new Article(5, "Chinese Analyzer", "这个是专业的中文分词器，一个一个字分 ");
 			Article article5 = new Article(6, " BrazilianAnalyzer", "巴西语言分词 ");
 			Article article6 = new Article(7, " CzechAnalyzer", "捷克语言分词 ");
-			Article article7 = new Article(8, "DutchAnalyzer", "荷兰语言分词 ");
-			Article article8 = new Article(9, "FrenchAnalyzer", "法国语言分词 ");
-			Article article9 = new Article(10, "沪K123", "这是一个车牌号，包含中文，字母，数字");
-			Article article10 = new Article(11, "沪K345", "上海~！@~！@");
-			Article article11 = new Article(12, "沪B678", "京津沪");
-			Article article12 = new Article(13, "沪A3424", "沪K345 沪K3 沪K123 沪K111111111 沪ABC");
-			Article article13 = new Article(14, "沪 B2222", "");
-			Article article14 = new Article(15, "沪K3454653", "沪K345");
-			Article article15 = new Article(16, "123 123 1 2 23 3", "沪K123");
+//			Article article7 = new Article(8, "DutchAnalyzer", "荷兰语言分词 ");
+//			Article article8 = new Article(9, "FrenchAnalyzer", "法国语言分词 ");
+//			Article article9 = new Article(10, "沪K123", "这是一个车牌号，包含中文，字母，数字");
+//			Article article10 = new Article(11, "沪K345", "上海~！@~！@");
+//			Article article11 = new Article(12, "沪B678", "京津沪");
+//			Article article12 = new Article(13, "沪A3424", "沪K345 沪K3 沪K123 沪K111111111 沪ABC");
+//			Article article13 = new Article(14, "沪 B2222", "");
+//			Article article14 = new Article(15, "沪K3454653", "沪K345");
+//			Article article15 = new Article(16, "123 123 1 2 23 3", "沪K123");
 			List<Article> articleList = new ArrayList<Article>();
 			articleList.add(article0);
 			articleList.add(article1);
@@ -83,15 +82,15 @@ public class SimpleFSDirectoryDemo {
 			articleList.add(article4);
 			articleList.add(article5);
 			articleList.add(article6);
-			articleList.add(article7);
-			articleList.add(article8);
-			articleList.add(article9);
-			articleList.add(article10);
-			articleList.add(article11);
-			articleList.add(article12);
-			articleList.add(article13);
-			articleList.add(article14);
-			articleList.add(article15);
+//			articleList.add(article7);
+//			articleList.add(article8);
+//			articleList.add(article9);
+//			articleList.add(article10);
+//			articleList.add(article11);
+//			articleList.add(article12);
+//			articleList.add(article13);
+//			articleList.add(article14);
+//			articleList.add(article15);
 			// 为了避免重复插入数据，每次测试前 先删除之前的索引
 			indexWriter.deleteAll();
 			// 获取实体对象
@@ -233,8 +232,7 @@ public class SimpleFSDirectoryDemo {
 		try {
 			indexReader = IndexReader.open(FSDirectory.open(indexFile));
 			// 创建一个排序对象，其中SortField构造方法中，第一个是排序的字段，第二个是指定字段的类型，第三个是是否升序排列，true：升序，false：降序。
-			Sort sort = new Sort(new SortField[] { new SortField("title", SortField.STRING, false),
-					new SortField("content", SortField.STRING, false) });
+			Sort sort = new Sort(new SortField[] { new SortField("title", SortField.STRING, false), new SortField("content", SortField.STRING, false) });
 			// Sort sort = new Sort();
 			// 创建搜索类
 			indexSearcher = new IndexSearcher(indexReader);
@@ -242,8 +240,7 @@ public class SimpleFSDirectoryDemo {
 			// QueryParser支持单个字段的查询，但是MultiFieldQueryParser可以支持多个字段查询，建议用后者这样可以实现全文检索的功能。
 			// QueryParser queryParser = new QueryParser(Version.LUCENE_36,
 			// "title", analyzer);
-			QueryParser queryParser = new MultiFieldQueryParser(Version.LUCENE_36, new String[] { "title", "content" },
-					analyzer);
+			QueryParser queryParser = new MultiFieldQueryParser(Version.LUCENE_36, new String[] { "title", "content" }, analyzer);
 			// 利用queryParser解析传递过来的检索关键字，完成Query对象的封装
 			Query query = queryParser.parse(keyword);
 			splitWord(keyword, true); // 显示拆分结果
@@ -279,8 +276,7 @@ public class SimpleFSDirectoryDemo {
 					content = highlighter.getBestFragment(tokenStream, content);
 				}
 				// 需要注意的是 如果使用了高亮显示的操作，查询的字段中没有需要高亮显示的内容 highlighter会返回一个null回来。
-				articleList.add(new Article(Integer.valueOf(id), title == null ? mydoc.get("title") : title,
-						content == null ? mydoc.get("content") : content));
+				articleList.add(new Article(Integer.valueOf(id), title == null ? mydoc.get("title") : title, content == null ? mydoc.get("content") : content));
 			}
 		} catch (CorruptIndexException e) {
 			e.printStackTrace();
@@ -319,8 +315,9 @@ public class SimpleFSDirectoryDemo {
 		SimpleFSDirectoryDemo luceneInstance = new SimpleFSDirectoryDemo();
 		// 建立要索引的文件
 		luceneInstance.createIndexFile();
-		// 从索引文件中查询数据
-		// luceneInstance.openIndexFile();
+//		 从索引文件中查询数据
+		
+		luceneInstance.openIndexFile();
 		// 查看IKAnalyzer分词结果
 		/*
 		 * String[] keywords = new
@@ -337,6 +334,7 @@ public class SimpleFSDirectoryDemo {
 		 * luceneInstance.splitWord(keywords[3], false);
 		 */
 		// 获得结果，然后交由相关应用程序处理
+//		luceneInstance.splitWord("需要注意的是 如果使用了高亮显示的操作，查询的字段中没有需要高亮显示的内容 highlighter会返回一个null回来", true);
 		String[] searchKeywords = new String[] { "analyzer", "沪B123", "沪K123", "沪K123 上海", "沪K3454653" };
 		luceneInstance.searchIndexFile(searchKeywords[1]);
 	}

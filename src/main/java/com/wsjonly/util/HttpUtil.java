@@ -41,12 +41,6 @@ public class HttpUtil {
 		return httpclient;
 	}
 
-	/**
-	 * ���Զ��Բ������UrlEncode
-	 * @param url
-	 * @param params
-	 * @return
-	 */
 	public static String post(String url, Map<String, String> params) {
 		CloseableHttpClient httpclient = getClient();
 		try {
@@ -206,12 +200,7 @@ public class HttpUtil {
         return "error";
     }	
 	
-	/**
-	 * ���Զ��Բ������UrlEncode
-	 * @param url
-	 * @param params
-	 * @return
-	 */
+    
 	public static String get(String url, Map<String, String> params) {
 		CloseableHttpClient httpclient = getClient();
 		try {
@@ -225,7 +214,7 @@ public class HttpUtil {
 			}
 			if(query.length() > 0){
 				String join = "?";
-				if(url.contains(join)) //ԭurl����querystring
+				if(url.contains(join)) 
 					join = "&";
 				url = url + join + query.toString();
 			}

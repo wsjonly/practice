@@ -29,14 +29,28 @@
 
 
 		<!-- on Mac -->
-		<!-- <dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-core</artifactId> 
-			<version>3.6.2</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
-			<artifactId>lucene-smartcn</artifactId> <version>3.2.0</version> </dependency> 
-			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-highlighter</artifactId> 
-			<version>3.6.2</version> </dependency> <dependency> <groupId>org.wltea.ik-analyzer</groupId> 
-			<artifactId>ik-analyzer</artifactId> <version>3.2.8</version> </dependency> -->
-		<!-- Mac end -->
-
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>3.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-smartcn</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-highlighter</artifactId>
+			<version>3.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.wltea.ik-analyzer</groupId>
+			<artifactId>ik-analyzer</artifactId>
+			<version>3.2.8</version>
+		</dependency>
+		<!-- on Mac ends -->
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -188,8 +202,8 @@
 			<version>4.5</version>
 		</dependency>
 
-	<!-- <dependency> <groupId>javax.jms</groupId> <artifactId>jms</artifactId> 
-		<version>1.1</version> </dependency> -->
+		<!-- <dependency> <groupId>javax.jms</groupId> <artifactId>jms</artifactId> 
+			<version>1.1</version> </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
