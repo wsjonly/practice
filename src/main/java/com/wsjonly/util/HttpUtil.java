@@ -267,25 +267,25 @@ public class HttpUtil {
 	
 	public static void main(String args[]){
 		//grant_type=password&username=autocratel@163.com&password=Welcome2sohu!
-		Map map = new HashMap();
-		map.put("client_id", "0oQthCIZ2E");
-		map.put("client_secret", "G8IAPMFjuG7BF3PiRoa7Bv");
-		map.put("grant_type", "password");
-		map.put("username", "autocratel@163.com");
-		map.put("password", "Welcome2sohu!");
-		String result = post("https://xueqiu.com/provider/oauth/token", map);
-		JSONObject json = JSONObject.fromObject(result);
-		String token = json.getString("access_token");
-		System.out.println("token:" + token);
-		
-		
-		//http://api.xueqiu.com/statuses/stock_public_timeline.json?symbol=aapl&sort=time&count=2&pa
-		//ge=1&access_token=
-		Map map2 = new HashMap();
-		map2.put("access_token", token);
-		map2.put("code", "AAPL,SZ000001");
-		String result2 = get("http://api.xueqiu.com/v4/stock/quote.json",
-				map2);
+//		Map map = new HashMap();
+//		map.put("client_id", "0oQthCIZ2E");
+//		map.put("client_secret", "G8IAPMFjuG7BF3PiRoa7Bv");
+//		map.put("grant_type", "password");
+//		map.put("username", "autocratel@163.com");
+//		map.put("password", "Welcome2sohu!");
+//		String result = post("https://xueqiu.com/provider/oauth/token", map);
+//		JSONObject json = JSONObject.fromObject(result);
+//		String token = json.getString("access_token");
+//		System.out.println("token:" + token);
+//		
+//		
+//		//http://api.xueqiu.com/statuses/stock_public_timeline.json?symbol=aapl&sort=time&count=2&pa
+//		//ge=1&access_token=
+//		Map map2 = new HashMap();
+//		map2.put("access_token", token);
+//		map2.put("code", "AAPL,SZ000001");
+		String result2 = get("http://www.baidu.com",
+				new HashMap());
 		//String test = "sda";
 		System.out.println(result2);
 		

@@ -10,28 +10,30 @@ public class WebpageSocket {
 
 	private static int port = 80;
 
-	private static String hostname = "www.baidu.com";
+	private static String hostname = "http://www.baidu.com";
 
 	public static void main(String[] args) throws Exception {
 		Socket socket = new Socket(hostname, port);
 
 		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "utf-8"));
 
-		writer.write("GET" + "/ask" + "HTTP/1.0rn");
+		writer.write("GET " + "/intl/policies/privacy/ " + "HTTP/1.1\r\n");
 
-		writer.write("HOST:" + hostname + "rn");
+		writer.write("HOST:" + hostname + "\r\n");
 
-		writer.write("Accept:*/*rn");
+		writer.write("Accept:*/*\r\n");
 
-		writer.write("rn");
+		writer.write("\r\n");
 
 		writer.flush();
+		
+		System.out.println("connection built");
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "utf-8"));
 
 		String line = null;
 
-		if ((line = reader.readLine()) != null) {
+		while ((line = reader.readLine()) != null) {
 
 			System.out.println(line);
 
