@@ -28,7 +28,6 @@
 			<version>3.2.8</version> </dependency> -->
 
 
-		<!-- on Mac -->
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
@@ -49,12 +48,11 @@
 			<artifactId>ik-analyzer</artifactId>
 			<version>3.2.8</version>
 		</dependency>
-		<!-- on Mac ends -->
 
 		<dependency>
-			<groupId>c3p0</groupId>
+			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
-			<version>0.9.1.2</version>
+			<version>0.9.5.1</version>
 		</dependency>
 
 
