@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 
 import com.wsjonly.concurrency.ConcurrentHashMap;
 
-public class A implements Callable<Integer> {
+class A implements Callable<Integer> {
 	private static int total = 2000000;
 	private static int every = 1000;
 	private String userId;
