@@ -1,9 +1,6 @@
 package com.wsjonly.concurrency.lock;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
-
-import com.wsjonly.concurrency.lock.MCSLock.MCSNode;
 
 public class MCSLock {
 	public static class MCSNode {
@@ -12,9 +9,8 @@ public class MCSLock {
 	}
 
 	volatile MCSNode queue;// 指向最后一个申请锁的MCSNode
-	
-	private static final AtomicReferenceFieldUpdater<MCSLock, MCSNode> UPDATER = AtomicReferenceFieldUpdater.newUpdater(MCSLock.class,
-			MCSNode.class, "queue");
+
+	private static final AtomicReferenceFieldUpdater<MCSLock, MCSNode> UPDATER = AtomicReferenceFieldUpdater.newUpdater(MCSLock.class, MCSNode.class, "queue");
 
 	public void lock(MCSNode currentThread) {
 		MCSNode predecessor = UPDATER.getAndSet(this, currentThread);// step 1

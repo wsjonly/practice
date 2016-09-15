@@ -1,5 +1,12 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
+encoding//src/main/java/com/wsjonly/concurrency/Test.java=UTF-8
+encoding//src/main/java/com/wsjonly/concurrency/lock/CLHLock.java=UTF-8
+encoding//src/main/java/com/wsjonly/concurrency/lock/MCSLock.java=UTF-8
+encoding//src/main/java/com/wsjonly/io/buffered/StreamVSBuffer.java=UTF-8
+encoding//src/main/java/com/wsjonly/io/buffered/WriterVSBuffer.java=UTF-8
+encoding//src/main/java/com/wsjonly/jms/Receiver.java=UTF-8
+encoding//src/main/java/com/wsjonly/jms/Sender.java=UTF-8
 encoding//src/main/java/com/wsjonly/util/Charsets.java=UTF-8
 encoding//src/main/resources=UTF-8
 encoding//src/test/java=UTF-8
