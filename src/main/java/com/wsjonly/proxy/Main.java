@@ -1,4 +1,4 @@
-package com.wsjonly.practice.proxy;
+package com.wsjonly.proxy;
 
 
 import org.springframework.aop.framework.ProxyFactory;

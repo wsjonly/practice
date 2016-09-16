@@ -21,5 +21,6 @@ public class T {
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 //		T t = (T) Class.forName("com.wsjonly.classloader.T").newInstance();
 		System.out.println(CL.X);
+		
 	}
 }

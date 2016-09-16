@@ -1,4 +1,4 @@
-package com.wsjonly.practice.proxy;
+package com.wsjonly.proxy;
 
 public class SimplePojo implements Pojo {
 	

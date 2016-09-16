@@ -15,9 +15,8 @@ import javassist.CtField.Initializer;
 
 public class JavassistGenerator {
 
-	public static void main(String[] args) throws CannotCompileException, NotFoundException, InstantiationException,
-			IllegalAccessException, ClassNotFoundException, SecurityException, NoSuchMethodException,
-			IllegalArgumentException, InvocationTargetException {
+	public static void main(String[] args) throws CannotCompileException, NotFoundException, InstantiationException, IllegalAccessException, ClassNotFoundException, SecurityException,
+			NoSuchMethodException, IllegalArgumentException, InvocationTargetException {
 		// 创建类
 		ClassPool pool = ClassPool.getDefault();
 		CtClass cls = pool.makeClass("cn.ibm.com.TestClass");
