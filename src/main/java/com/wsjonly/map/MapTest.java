@@ -1,7 +1,9 @@
 package com.wsjonly.map;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class MapTest {
 	public static void main(String[] args) {
@@ -15,5 +17,6 @@ public class MapTest {
 		
 		System.out.println(map.toString());
 		System.out.println(map.entrySet());
+		Iterator<Entry<String, String>> ite = map.entrySet().iterator();
 	}
 }
