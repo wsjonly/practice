@@ -1,12 +1,11 @@
 package com.wsjonly.practice;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.wsjonly.util.HttpUtil;
 
 public class HttpUtilTest {
-	public static void main(String[] args) {
-	
-	}
+    public static void main(String[] args) {
+
+        String response = HttpUtil.get("http://release.mtmq.test.sankuai.info/subscribe/list?subscribeName=&consumerAppkeyName=waimai&currentPage=", null);
+        System.out.println(response);
+    }
 }

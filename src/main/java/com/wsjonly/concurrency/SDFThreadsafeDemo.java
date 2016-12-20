@@ -14,7 +14,7 @@ public class SDFThreadsafeDemo {
 		}
 	};
 	
-	private static String[] dates = {"11-09-1990", "06-22-1992", "08-09-2014"};
+	private static String[] dates = {"11-09-1990", "06-22-1992", "31-05-2015"};
 	
 	public static void main(String[] args) {
 		
